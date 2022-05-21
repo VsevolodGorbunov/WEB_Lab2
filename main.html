@@ -5,18 +5,23 @@
     <title>Neko API</title>
 </head>
 <body>
-<div>
-    <form name = "select_png_form" action="" method="post">
-        <label>Выберите png: </label>
-        <select name="select_png" id="select_png">
-            <option value="kitsune">kitsune</option>
-            <option value="neko">neko</option>
-            <option value="waifu">waifu</option>
-        </select>
-        <button id="select_png_btn">Найти</button>
-    </form>
 
-</div>
-<script src="main.js"></script>
+<form id="form">
+    <label>Выберите png: </label>
+    <select id="select_png">
+        <option value="kitsune">kitsune</option>
+        <option value="neko">neko</option>
+        <option value="waifu">waifu</option>
+    </select>
+    <button type="submit">Найти</button>
+</form>
+
+<img id="spinner" src="loading.gif", style="display: none">
+
+<img id="image">
+
+<div id="error" style="color: darkred"></div>
+
+<script type="module" src="main.js"></script>
 </body>
 </html>
